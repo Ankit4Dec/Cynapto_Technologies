@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Editor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top">
+      <div class="parent">
+        <div class="division">
+          <div class="part">
+            <div class="current-video">abc</div>
+          </div>
+        </div>
+        <div class="division">
+          <div class="part">
+            <div class="ruler"></div>
+            <div class="video-preview"></div>
+          </div>
+        </div>
+        <div class="division">
+          <h2>Properties</h2>
+          <div class="properties-container">
+            <div class="property">
+              <div class="scale">
+                <div class="scale">
+                  <label for="scale" style="margin-right: 15px">Scale:</label>
+                </div>
+                <div class="ip">
+                  <input
+                    type="range"
+                    id="scale"
+                    value="100"
+                    min="10"
+                    max="100"
+                  />
+                  <span
+                    ><input type="text" id="scaleValue" value="100" disabled
+                  /></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="scale">
+              <div class="scale"><label for="scale">Opacity:</label></div>
+              <div class="ip">
+                <input
+                  type="range"
+                  id="scale2"
+                  value="100"
+                  min="10"
+                  max="100"
+                />
+                <span
+                  ><input type="text" id="scaleValue2" value="100" disabled
+                /></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="property" style="margin-bottom: 10px">
+            <label for="rotation"
+              ><span style="margin-right: 105px; margin-left: -72px"
+                >Rotation</span
+              >Z</label
+            >
+
+            <input type="number" id="rotationX" value="0" step="1" />
+          </div>
+          <div class="property" style="margin-bottom: 10px">
+            <label for="rotation"
+              ><span
+                style="
+                  margin-right: 105px;
+                  margin-left: -72px;
+                  visibility: hidden;
+                "
+                >Rotation</span
+              >Y</label
+            >
+
+            <input type="number" id="rotationX" value="0" step="1" />
+          </div>
+          <div
+            class="property"
+            style="
+              margin-bottom: 10px;
+              border-bottom: 1px solid black;
+              padding-bottom: 5px;
+            "
+          >
+            <label for="rotation"
+              ><span
+                style="
+                  margin-right: 105px;
+                  margin-left: -72px;
+                  visibility: hidden;
+                "
+                >Rotation</span
+              >X</label
+            >
+
+            <input type="number" id="rotationX" value="0" step="1" />
+          </div>
+          <div class="property" style="margin-bottom: 10px">
+            <label for="position"
+              ><span style="margin-right: 105px; margin-left: -72px"
+                >Position</span
+              >X</label
+            >
+
+            <input type="number" id="rotationX" value="0" step="1" />
+          </div>
+          <div class="property" style="margin-bottom: 10px">
+            <label for="rotation"
+              ><span
+                style="
+                  margin-right: 105px;
+                  margin-left: -72px;
+                  visibility: hidden;
+                "
+                >Rotation</span
+              >Y</label
+            >
+
+            <input type="number" id="rotationX" value="0" step="1" />
+          </div>
+          <div class="property" style="margin-bottom: 10px">
+            <label for="rotation"
+              ><span
+                style="
+                  margin-right: 105px;
+                  margin-left: -72px;
+                  visibility: hidden;
+                "
+                >Rotation</span
+              >Z</label
+            >
+
+            <input type="number" id="rotationX" value="0" step="1" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

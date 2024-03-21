@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.parent {
+  border: 10px solid green;
+  /* margin: 1rem; */
+  height: 60vh;
+  /* padding: 1rem 1rem; */
+  text-align: center;
+  display: flex;
+}
+
+.division {
+
+  display: inline-block;
+  border: 1px solid aquamarine;
+  height: 56vh;
+  width: 54vh;
+  padding: 1rem 1rem;
+}
+
+input[type="number"] {
+  width: 40px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+
+.scale {
+  display: flex;
+}
+
+#scaleValue {
+  width: 40px;
+}
+
+#scaleValue2 {
+  width: 40px;
+}
+
+.properties-container {
+  font-size: 0.80rem;
+}
+
+.properties-container>.property,
+.scale {
+  margin-bottom: 5px;
+}
+
+.property>label {
+  font-size: 0.75rem;
+  margin-bottom: 5px;
+}
