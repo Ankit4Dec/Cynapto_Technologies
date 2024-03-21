@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar With Bootstrap</title>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <aside id="sidebar">
+        <div class="d-flex" style="margin-bottom: 26px;">
+          <button class="toggle-btn" type="button">
+            <i class="fa-solid fa-v"></i>
+          </button>
+          <div class="sidebar-logo">
+            <a href="#">VEED.IO</a>
+          </div>
+        </div>
+        <ul class="sidebar-nav">
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="fa-solid fa-plus"></i>
+              <span>New Video</span>
+            </a>
+          </li>
+
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="fa-solid fa-house"></i>
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="fa-solid fa-gopuram"></i>
+              <span>Templates</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="fa-regular fa-folder"></i>
+              <span>All Video</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <div class="main">
+        <nav class="navbar navbar-expand px-4 py-3">
+          <button class="toggle-btn" type="button">
+            <i class="fa-solid fa-greater-than"></i>
+          </button>
+          <form
+            action="#"
+            class="d-none d-sm-inline-block me-auto"
+            style="width: 110px"
+          ></form>
+          <div class="navbar-collapse collapse">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              type="text"
+              name="search"
+              id="seachbox"
+              placeholder="search"
+              style="width: 800px"
+            />
+          </div>
+          <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+            <img
+              src="/user.png"
+              class="avatar img-fluid"
+              alt=""
+              style="margin-left: 200px"
+            />
+          </a>
+        </nav>
+        <!-- Above Code is fine ----------------------------------------------------------------------------------------------->
+        <div class="content">
+          <h4 style="margin-bottom: 30px">Let's Create Some <b>Videos!</b></h4>
+          <div class="content-btn">
+            <!-- <div class="btn1"> -->
+
+            <button type="button" class="btn btn-primary btn-lg">
+              <span style="margin-right: 2px; background-color: #f7ecfc"
+                ><i class="fa-solid fa-scissors " style="color: #8d54cc;"></i
+              ></span>
+
+              Create Project
+            </button>
+            <button type="button" class="btn btn-primary btn-lg">
+              <span style="margin-right: 2px; background-color: #faeaea"
+                ><i
+                  class="fa-solid fa-video fa-flip-vertical"
+                  style="color: #d78d93"
+                ></i
+              ></span>
+
+              Record Video
+            </button>
+            <!-- </div> -->
+
+            <!-- <button type="button" class="btn btn-secondary btn-lg">
+              <i class="fa-solid fa-video" #d78d93></i>
+              Record Video
+            </button> -->
+          </div>
+        </div>
+
+        <div class="videos">
+          <div class="videos-text">
+            <h5>My Recent Videos</h5>
+            <p style="text-decoration: underline; cursor: pointer;">All Videos ></p>
+          </div>
+
+          <div class="videos-item" style="margin-left: -70px">
+            <div class="video-list">
+              <video width="320" height="240" controls>
+                <source src="" type="video/mp4" />
+                <source src="movie.ogg" type="video/ogg" />
+                Your browser does not support the video tag.
+              </video>
+              <p>Project Name -1</p>
+            </div>
+            <div class="video-list">
+              <video width="320" height="240" controls>
+                <source src="" type="video/mp4" />
+                <source src="movie.ogg" type="video/ogg" />
+                Your browser does not support the video tag.
+              </video>
+              <p>Project Name -2</p>
+            </div>
+            <div class="video-list">
+              <video width="320" height="240" controls>
+                <source src="" type="video/mp4" />
+                <source src="movie.ogg" type="video/ogg" />
+                Your browser does not support the video tag.
+              </video>
+              <p>Project Name -3</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Below code is fine -----=========================================================================================-->
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/141bc07878.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
