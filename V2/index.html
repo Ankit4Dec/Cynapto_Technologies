@@ -11,13 +11,45 @@
       <div class="parent">
         <div class="division">
           <div class="part">
-            <div class="current-video">abc</div>
+            <div class="asset-container">
+              <header>Assets</header>
+              <div class="video-preview"></div>
+              <div class="controls">
+                <input
+                  type="file"
+                  id="add-video"
+                  accept="video/*"
+                  class="add-button"
+                  hidden
+                />
+                <label for="add-video" class="control-button">Add</label>
+                <button class="control-button">View</button>
+                <div class="sort-dropdown">
+                  <button class="sort-button">Sort</button>
+                  <ul class="sort-options">
+                    <li data-sort="name">Name</li>
+                    <li data-sort="date">Date</li>
+                    <li data-sort="size">Size</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="division">
           <div class="part">
             <div class="ruler"></div>
-            <div class="video-preview"></div>
+            <div class="video-preview">
+              <div class="controls">
+                <button class="control-button" data-option="cursor">
+                  Cursor
+                </button>
+                <button class="control-button" data-option="hand">Hand</button>
+                <button class="control-button" data-option="crop">Crop</button>
+                <div class="crop-value">50%</div>
+              </div>
+              <video id="myVideo" class="video-player" controls></video>
+            </div>
           </div>
         </div>
         <div class="division">
@@ -169,6 +201,51 @@
           />
         </div>
         <button>Zoom In</button>
+      </div>
+    </div>
+    <div class="timeline-container">
+      <div class="timeline">
+        <div class="timeline-content">
+          <div class="timeline-icons"></div>
+          <div class="timeline-label"></div>
+        </div>
+        <div class="timeline-progress"></div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-content">
+          <div class="timeline-icons"></div>
+          <div class="timeline-label">Track 1</div>
+          <img
+            class="timeline-icon"
+            src="path/to/eye-icon.png"
+            alt="Eye icon"
+          />
+          <img
+            class="timeline-icon"
+            src="path/to/lock-icon.png"
+            alt="Lock icon"
+          />
+        </div>
+        <div class="timeline-progress filled"></div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-content">
+          <div class="timeline-icons"></div>
+          <div class="timeline-label">Track 2</div>
+          <img
+            class="timeline-icon"
+            src="path/to/eye-icon.png"
+            alt="Eye icon"
+          />
+          <img
+            class="timeline-icon"
+            src="path/to/lock-icon.png"
+            alt="Lock icon"
+          />
+        </div>
+        <div class="timeline-progress"></div>
       </div>
     </div>
 

@@ -118,3 +118,85 @@ button {
 .toolbox button:hover {
   background-color: #0056b3;
 }
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  width: 600px; /* Adjust width as needed */
+  margin: 0 auto;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.control-button {
+  border: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.video-player {
+  width: 100%; /* Fills the container width */
+}
+
+.crop-value {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  width: 600px; /* Adjust width as needed */
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.timeline {
+  display: flex;
+  align-items: center;
+  height: 20px; /* Adjust height as needed */
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.timeline-content {
+  display: flex;
+}
+
+.timeline-icons {
+  display: flex;
+  margin-right: 10px; /* Spacing between icons and label */
+}
+
+.timeline-icon {
+  width: 15px; /* Adjust icon size */
+  height: 15px; /* Adjust icon size */
+}
+
+.timeline-label {
+  width: 50px; /* Adjust width as needed */
+  text-align: left;
+}
+
+.timeline-progress {
+  flex-grow: 1; /* Fills remaining space */
+  background-color: #ddd;
+  height: 5px; /* Adjust height as needed */
+}
+
+.timeline-progress.filled {
+  background-color: #4CAF50; /* Adjust fill color */
+}
+
+

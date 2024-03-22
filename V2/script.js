@@ -30,3 +30,41 @@ scaleInput2.addEventListener("input", function () {
   // Update the scale value
   scaleValue2.value = scale2.toFixed(1);
 });
+
+const videoGrid = document.querySelector('.video-grid');
+const addVideoInput = document.getElementById('add-video');
+
+// Function to handle adding video files
+addVideoInput.addEventListener('change', (event) => {
+  const files = event.target.files;
+  if (files.length > 0) {
+    Array.from(files).forEach(file => {
+      const videoPreview = document.createElement('div');
+      videoPreview.classList.add('video-preview');
+      videoPreview.textContent = file.name;
+      videoGrid.appendChild(videoPreview);
+
+      // Load video template in video frame
+      const videoFrame = document.querySelector('.video-frame');
+      const videoTemplate = document.createElement('img'); // Use <img> tag for video template
+      videoTemplate.src = 'path_to_your_video_template'; // Set the source of the video template
+      videoTemplate.alt = 'Video Template';
+      videoFrame.innerHTML = ''; // Clear previous content
+      videoFrame.appendChild(videoTemplate);
+    });
+  }
+});
+
+// Function to handle viewing video assets
+document.querySelector('.control-button:nth-of-type(2)').addEventListener('click', () => {
+  // Implement your logic to view video assets here
+});
+
+// Function to handle sorting video assets
+document.querySelector('.sort-options').addEventListener('click', (event) => {
+  const sortOption = event.target.dataset.sort;
+  if (sortOption) {
+    // Implement your logic to sort video assets based on the selected option
+    console.log('Sorting by:', sortOption);
+  }
+});
