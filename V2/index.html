@@ -54,155 +54,216 @@
         </div>
         <div class="division">
           <h2>Properties</h2>
-          <div class="properties-container">
-            <div class="property">
-              <div class="scale">
-                <div class="scale">
-                  <label for="scale" style="margin-right: 15px">Scale:</label>
-                </div>
-                <div class="ip">
-                  <input
-                    type="range"
-                    id="scale"
+          <div class="properties-container" style="margin-top: 20px">
+            <div class="property" style="display: flex; align-items: center">
+              <div class="property-label" style="flex: 1">
+                <label for="scale" style="margin-right: 15px">Scale:</label>
+              </div>
+              <div
+                class="property-input"
+                style="display: flex; align-items: center"
+              >
+                <input
+                  type="range"
+                  id="scale"
+                  value="100"
+                  min="10"
+                  max="100"
+                  style="flex: 1"
+                />
+                <span
+                  ><input
+                    type="text"
+                    id="scaleValue"
                     value="100"
-                    min="10"
-                    max="100"
-                  />
-                  <span
-                    ><input type="text" id="scaleValue" value="100" disabled
-                  /></span>
-                </div>
+                    disabled
+                    style="width: 50px; margin-left: 10px"
+                /></span>
               </div>
             </div>
 
-            <div class="scale">
-              <div class="scale"><label for="scale">Opacity:</label></div>
-              <div class="ip">
+            <div class="property" style="display: flex; align-items: center">
+              <div class="property-label" style="flex: 1">
+                <label for="opacity" style="margin-right: 15px">Opacity:</label>
+              </div>
+              <div
+                class="property-input"
+                style="display: flex; align-items: center"
+              >
                 <input
                   type="range"
                   id="scale2"
                   value="100"
                   min="10"
                   max="100"
+                  style="flex: 1"
                 />
                 <span
-                  ><input type="text" id="scaleValue2" value="100" disabled
+                  ><input
+                    type="text"
+                    id="scaleValue2"
+                    value="100"
+                    disabled
+                    style="width: 50px; margin-left: 10px"
                 /></span>
               </div>
             </div>
-          </div>
 
-          <div class="property" style="margin-bottom: 10px">
-            <label for="rotation"
-              ><span style="margin-right: 105px; margin-left: -72px"
-                >Rotation</span
-              >Z</label
-            >
+            <div class="property" style="display: flex; align-items: center">
+              <div class="property-label" style="flex: 1">
+                <label for="rotation" style="margin-right: 15px"
+                  >Rotation:</label
+                >
+              </div>
+              <div
+                class="property-input"
+                style="display: flex; align-items: center"
+              >
+                <label for="rotationX">Z</label>
+                <input
+                  type="number"
+                  id="rotationX"
+                  value="0"
+                  step="1"
+                  style="width: 50px; margin-right: 5px"
+                />
+              </div>
+            </div>
+            <div class="property" style="display: flex; align-items: center">
+              <div class="property-label" style="flex: 1">
+                <label
+                  for="rotation"
+                  style="margin-right: 15px; visibility: hidden"
+                  >Rotation:</label
+                >
+              </div>
+              <div
+                class="property-input"
+                style="display: flex; align-items: center"
+              >
+                <label for="rotationX">X</label>
+                <input
+                  type="number"
+                  id="rotationX"
+                  value="0"
+                  step="1"
+                  style="width: 50px; margin-right: 5px"
+                />
+              </div>
+            </div>
+            <div class="property" style="display: flex; align-items: center">
+              <div class="property-label" style="flex: 1">
+                <label
+                  for="rotation"
+                  style="margin-right: 15px; visibility: hidden"
+                  >Rotation:</label
+                >
+              </div>
+              <div
+                class="property-input"
+                style="display: flex; align-items: center"
+              >
+                <label for="rotationX">Y</label>
+                <input
+                  type="number"
+                  id="rotationX"
+                  value="0"
+                  step="1"
+                  style="width: 50px; margin-right: 5px"
+                />
+              </div>
+            </div>
 
-            <input type="number" id="rotationX" value="0" step="1" />
-          </div>
-          <div class="property" style="margin-bottom: 10px">
-            <label for="rotation"
-              ><span
-                style="
-                  margin-right: 105px;
-                  margin-left: -72px;
-                  visibility: hidden;
-                "
-                >Rotation</span
-              >Y</label
-            >
-
-            <input type="number" id="rotationX" value="0" step="1" />
-          </div>
-          <div
-            class="property"
-            style="
-              margin-bottom: 10px;
-              border-bottom: 1px solid black;
-              padding-bottom: 5px;
-            "
-          >
-            <label for="rotation"
-              ><span
-                style="
-                  margin-right: 105px;
-                  margin-left: -72px;
-                  visibility: hidden;
-                "
-                >Rotation</span
-              >X</label
-            >
-
-            <input type="number" id="rotationX" value="0" step="1" />
-          </div>
-          <div class="property" style="margin-bottom: 10px">
-            <label for="position"
-              ><span style="margin-right: 105px; margin-left: -72px"
-                >Position</span
-              >X</label
-            >
-
-            <input type="number" id="rotationX" value="0" step="1" />
-          </div>
-          <div class="property" style="margin-bottom: 10px">
-            <label for="rotation"
-              ><span
-                style="
-                  margin-right: 105px;
-                  margin-left: -72px;
-                  visibility: hidden;
-                "
-                >Rotation</span
-              >Y</label
-            >
-
-            <input type="number" id="rotationX" value="0" step="1" />
-          </div>
-          <div class="property" style="margin-bottom: 10px">
-            <label for="rotation"
-              ><span
-                style="
-                  margin-right: 105px;
-                  margin-left: -72px;
-                  visibility: hidden;
-                "
-                >Rotation</span
-              >Z</label
-            >
-
-            <input type="number" id="rotationX" value="0" step="1" />
+            <div class="property" style="display: flex; align-items: center">
+              <div class="property-label" style="flex: 1">
+                <label for="position" style="margin-right: 15px"
+                  >Position:</label
+                >
+              </div>
+              <div
+                class="property-input"
+                style="display: flex; align-items: center"
+              >
+                <label for="positionX">X</label>
+                <input
+                  type="number"
+                  id="positionX"
+                  value="0"
+                  step="1"
+                  style="width: 50px; margin-right: 5px"
+                />
+              </div>
+            </div>
+            <div class="property" style="display: flex; align-items: center">
+              <div class="property-label" style="flex: 1">
+                <label
+                  for="position"
+                  style="margin-right: 15px; visibility: hidden"
+                  >Position:</label
+                >
+              </div>
+              <div
+                class="property-input"
+                style="display: flex; align-items: center"
+              >
+                <label for="positionX">Y</label>
+                <input
+                  type="number"
+                  id="positionX"
+                  value="0"
+                  step="1"
+                  style="width: 50px; margin-right: 5px"
+                />
+              </div>
+            </div>
+            <div class="property" style="display: flex; align-items: center">
+              <div class="property-label" style="flex: 1">
+                <label
+                  for="position"
+                  style="margin-right: 15px; visibility: hidden"
+                  >Position:</label
+                >
+              </div>
+              <div
+                class="property-input"
+                style="display: flex; align-items: center"
+              >
+                <label for="positionX">Z</label>
+                <input
+                  type="number"
+                  id="positionX"
+                  value="0"
+                  step="1"
+                  style="width: 50px; margin-right: 5px"
+                />
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="controls">
-        <button>Previous</button>
-        <button>Pause/Play</button>
-        <button>Next</button>
-        <div class="progress-bar">
-          <div class="progress" style="width: 50%"></div>
-        </div>
-        <span class="time">00:00 / 05:00</span>
-      </div>
-      <div class="toolbox">
-        <button>Rotate Left</button>
-        <button>Rotate Right</button>
-        <button>Trim / Split</button>
-        <button>Copy</button>
-        <button>Layer</button>
-        <button>Zoom Out</button>
-        <div style="flex-grow: 1; margin: 0 10px">
-          <input
-            type="range"
-            min="0"
-            max="100"
-            value="50"
-            style="width: 100%"
-          />
-        </div>
-        <button>Zoom In</button>
       </div>
     </div>
+    <div class="controls">
+      <button>Previous</button>
+      <button>Pause/Play</button>
+      <button>Next</button>
+      <div class="progress-bar">
+        <div class="progress" style="width: 50%"></div>
+      </div>
+      <span class="time">00:00 / 05:00</span>
+    </div>
+    <div class="toolbox">
+      <button>Rotate Left</button>
+      <button>Rotate Right</button>
+      <button>Trim / Split</button>
+      <button>Copy</button>
+      <button>Layer</button>
+      <button>Zoom Out</button>
+      <div style="flex-grow: 1; margin: 0 10px">
+        <input type="range" min="0" max="100" value="50" style="width: 100%" />
+      </div>
+      <button>Zoom In</button>
+    </div>
+
     <div class="timeline-container">
       <div class="timeline">
         <div class="timeline-content">
